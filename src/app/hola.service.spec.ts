@@ -27,10 +27,10 @@ describe('HolaService', () => {
     expect(holaService.title).toBe('hello');
   }));
 
-  test.only('sety using done', (done) => {
+  test('sety using done', (done) => {
     holaService.sety();
     setTimeout(() => {
-      expect(holaService.title).toBe('helloxxxxx');
+      expect(holaService.title).toBe('hello');
       console.log('inner done settimeout');
       done();
     }, 30);
